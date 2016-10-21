@@ -46,3 +46,10 @@ Demonstrates adding a new service to an existing topology and how a client can j
 8. Cleanup `./teardown-all.sh`
 
 ## Demo 2: Integration Bug!
+
+Demonstrates how an existing topology can be safely modified. An existing system with several systems is extended with a broken service. The MDK circuit breaker component kicks-in and stops the bleeding.
+
+1. Open demo2 directory and launch the base topology using microcosm
+
+## Demo 3: Per-request Routing Overrides!
+
