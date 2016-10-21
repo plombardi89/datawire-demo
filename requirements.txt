@@ -1,4 +1,5 @@
 datawire_mdk
 docopt
 flask
+pyyaml
 requests
