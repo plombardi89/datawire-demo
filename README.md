@@ -4,7 +4,9 @@ I wrote my own demo script because I wanted one *I understood* the mechanics of 
 
 ## Setup Instructions
 
-1. Add `MDK_EXPERIMENTAL=1` to `~/.bashrc`
+1. Ensure `MDK_EXPERIMENTAL=1` is set in `~/.bashrc`
+2. Ensure `screen` app is installed.
+3. Run `make all`
 
 ## Demo 1: Discovery and Modifying a Simple Topology
 

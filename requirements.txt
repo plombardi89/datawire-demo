@@ -1,0 +1,4 @@
+datawire_mdk
+docopt
+flask
+requests

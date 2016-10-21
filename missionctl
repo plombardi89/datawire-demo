@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+google-chrome --new-window --profile-directory="Profile 1" https://app.datawire.io
