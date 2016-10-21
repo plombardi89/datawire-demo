@@ -1,0 +1,8 @@
+# --- IntelliJ IDEA ---
+.idea
+
+# --- Linux ---
+.directory
+
+# --- macOS ---
+.DS_Store
