@@ -75,10 +75,6 @@ Demonstrates how an existing topology can be safely modified. An existing system
 
 Demonstrates how an existing topology can be safely modified by adding a new service that implements a new feature.
 
-## Demo 2: Integration Bug!
-
-Demonstrates how an existing topology can be safely modified. An existing system with several systems is extended with a broken service. The MDK circuit breaker component kicks-in and stops the bleeding.
-
 1. Open demo2 directory and launch the base topology using microcosm.
 
    `./setup-election.sh`
