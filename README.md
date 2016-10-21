@@ -53,7 +53,46 @@ Demonstrates adding a new service to an existing topology and how a client can j
 
 Demonstrates how an existing topology can be safely modified. An existing system with several systems is extended with a broken service. The MDK circuit breaker component kicks-in and stops the bleeding.
 
-1. Open demo2 directory and launch the base topology using microcosm
+1. Open demo2 directory and launch the base topology using microcosm.
 
+   `./setup-election.sh`
+   
+2. Hit the frontend service in the topology with a request and notice it works fine.
+
+   `curl localhost:5000`
+   
+3. Boot up the buggy service.
+
+   `./setup-buggy-election.sh`
+   
+4. Hit the frontend service in the topology with a request and notice it will fail eventually when the buggy service is requested..., however, keep hitting the frontend and you'll notice the buggy service is removed from the pool.
+
+   `curl localhost:5000`
+   
+5. Cleanup `./teardown-all.sh`
+   
 ## Demo 3: Per-request Routing Overrides!
 
+Demonstrates how an existing topology can be safely modified by adding a new service that implements a new feature.
+
+## Demo 2: Integration Bug!
+
+Demonstrates how an existing topology can be safely modified. An existing system with several systems is extended with a broken service. The MDK circuit breaker component kicks-in and stops the bleeding.
+
+1. Open demo2 directory and launch the base topology using microcosm.
+
+   `./setup-election.sh`
+   
+2. Hit the frontend service in the topology with a request and notice it works fine.
+
+   `curl localhost:5000`
+   
+3. Boot up the buggy service.
+
+   `./setup-modified-election.sh`
+   
+4. Hit the frontend service in the topology with a request and notice it will fail eventually when the buggy service is requested..., however, keep hitting the frontend and you'll notice the buggy service is removed from the pool.
+
+   `./request.py`
+   
+5. Cleanup `./teardown-all.sh`
