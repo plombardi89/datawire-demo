@@ -9,8 +9,12 @@ I wrote my own demo script because I wanted one *I understood* the mechanics of 
 
     Fedora 23/24:
     `sudo -s dnf install screen`
-    
-3. Ensure runtime dependencies are installed.
+
+3. Clone the repository
+
+   `git clone --recursive git://github.com/plombardi89/datawire-demo`
+
+4. Ensure runtime dependencies are installed.
 
     `make all`
 
